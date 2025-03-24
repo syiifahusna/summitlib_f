@@ -6,7 +6,7 @@ const Jumbotron = () =>{
     <div className="container-fluid py-5">
     <h1 className="display-5 fw-bold">Summit Lib</h1>
     <p className="col-md-8 fs-4">Your gateway to knowledge and community resources</p>
-    <button className="btn btn-primary btn-lg" type="button">Find Books</button>
+    <a className="btn btn-primary btn-lg" href="/search">Find Books</a>
     </div>
   </div>
   }
@@ -29,17 +29,6 @@ const Jumbotron = () =>{
     <p className="text-muted mb-4">Based on your recent reading history and preferences</p>
     
     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
         <BookCard></BookCard>
     </div>
     
