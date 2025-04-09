@@ -12,6 +12,12 @@ const Jumbotron = () =>{
   }
   
   const Ads = () =>{
+
+
+
+
+
+    
     return <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
       <div className="col-lg-6 px-0">
         <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
