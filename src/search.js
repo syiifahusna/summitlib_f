@@ -1,9 +1,11 @@
 import SearchForm from "./util/SearchForm"
 import Book from "./util/BookCard"
 
-const Search = () =>{ return <div className="container mb-5">
+const Search = () =>{ return <div className="container my-5">
 
-<SearchForm></SearchForm>
+    <h2 className="text-center mb-5">Search Books</h2>
+
+    <SearchForm></SearchForm>
   
     <h2>Recommended For You</h2>
     <p className="text-muted mb-4">Based on your recent reading history and preferences</p>

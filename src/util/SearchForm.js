@@ -1,52 +1,33 @@
 const SearchForm = () =>{
-    return <div className="container my-5">
-      <div className="row">
-          <div className="col-md-3">
-              <label className="form-label">Genre</label>
-              <select className="form-select">
-                  <option defaultValue="">All Genres</option>
-                  <option>Fiction</option>
-                  <option>Science Fiction</option>
-                  <option>Mystery</option>
-                  <option>Fantasy</option>
-                  <option>Non-Fiction</option>
-              </select>
-          </div>
-          <div className="col-md-3">
-              <label className="form-label">Availability</label>
-              <select className="form-select">
-                  <option defaultValue="">All</option>
-                  <option>Available Now</option>
-                  <option>On Loan</option>
-                  <option>Coming Soon</option>
-              </select>
-          </div>
-          <div className="col-md-3">
-              <label className="form-label">Rating</label>
-              <select className="form-select">
-                  <option defaultValue="">Any Rating</option>
-                  <option>4+ Stars</option>
-                  <option>3+ Stars</option>
-                  <option>2+ Stars</option>
-              </select>
-          </div>
-          <div className="col-md-3">
-              <label className="form-label">Sort By</label>
-              <select className="form-select">
-                  <option defaultValue="">Relevance</option>
-                  <option>Newest</option>
-                  <option>Most Popular</option>
-                  <option>Highest Rated</option>
-              </select>
-          </div>
-      </div>
-      <div className="row mt-3">
-          <div className="col-12">
-              <button className="btn btn-primary">Apply Filters</button>
-              <button className="btn btn-outline-secondary ms-2">Reset</button>
-          </div>
-      </div>
-  </div>
+    return <div className="row">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <form id="searchForm">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search by title, author, ISBN..."></input>
+                        <button class="btn btn-primary btn-lg" type="submit">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="searchType" id="searchTitle" checked></input>
+                            <label class="form-check-label" for="searchTitle">Title</label>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="searchType" id="searchAuthor"></input>
+                            <label class="form-check-label" for="searchAuthor">Author</label>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="searchType" id="searchISBN"></input>
+                            <label class="form-check-label" for="searchISBN">ISBN</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 }
 
 export default SearchForm;

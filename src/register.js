@@ -62,7 +62,7 @@ const Register = () => {
         <div className="d-flex justify-content-center align-items-center container">
             <div className="card col-12 col-sm-10 col-md-8 col-lg-6 mt-5" id="registration-page">
                 <div className="card-body">
-                    <h2 className="card-header text-center">Create an Account</h2>
+                    <h2 className="text-center">Create an Account</h2>
                     <div className="card-body">
                         {error && <div className="alert alert-danger" role="alert">{error}</div>}
                         {success && <div className="alert alert-success" role="alert">{success}</div>}
