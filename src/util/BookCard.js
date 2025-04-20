@@ -25,12 +25,11 @@ const BookCard = ({ book }) =>{
                 <span className={`badge ${status ? "bg-success" : "bg-secondary"}`}>
                   {status ? "Available" : "Unavailable"}
                 </span>
-                <small className="text-muted">{category || "Uncategorized"}</small>
+                <small className="text-muted">{category ? category.category : "Uncategorized"}</small>
               </div>
             </div>
             <div className="card-footer bg-transparent">
               <a href={`/book/${id}`} className="btn btn-sm btn-outline-primary">Details</a>
-              <a href="#" className="btn btn-sm btn-primary">Borrow</a>
             </div>
           </div>
         </div>

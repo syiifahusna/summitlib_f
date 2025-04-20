@@ -8,6 +8,7 @@ import Register from "./register";
 import Login from "./login";
 import Search from './search';
 import Categories from './categories';
+import Category from './category';
 import NotFound from './notfound'
 import Book from './book';
 
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/categories" element={<Categories />} />
+                <Route path="/categories/:id" element={<Category />} />
                 <Route path="/book/:id" element={<Book />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>

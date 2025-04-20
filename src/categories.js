@@ -39,7 +39,7 @@ const Categories = () =>{
                         <p className="card-text">{cat.description}</p>
                         </div>
                         <div className="card-footer bg-transparent border-0 text-center">
-                        <a href="#" className="btn btn-outline-primary">
+                        <a href={`/categories/${cat.id}`} className="btn btn-outline-primary">
                             Browse {cat.category}
                         </a>
                         </div>

@@ -1,5 +1,5 @@
 import SearchForm from "./util/SearchForm"
-import Book from "./util/BookCard"
+import BookCard from "./util/BookCard"
 
 const Search = () =>{ return <div className="container my-5">
 
@@ -11,7 +11,7 @@ const Search = () =>{ return <div className="container my-5">
     <p className="text-muted mb-4">Based on your recent reading history and preferences</p>
     
     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
-        <Book></Book>
+         {/* <BookCard key={book.id} book={book} /> */}
     </div>
     
     <nav aria-label="Page navigation">

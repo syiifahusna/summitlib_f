@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import BookCard from "./util/BookCard"
 
 const Jumbotron = () =>{
@@ -42,8 +41,8 @@ const Jumbotron = () =>{
 
     return <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
       <div className="col-lg-6 px-0">
-        <h1 className="display-4 fst-italic">{adsTitle}</h1>
-        <p className="lead my-3">{adsDesc}</p>
+        <h1 className="display-4 fst-italic">{adsTitle ? adsTitle : "No Ads"}</h1>
+        <p className="lead my-3">{adsDesc ? adsDesc : "No Ads"}</p>
       </div>
     </div>
   }
@@ -89,12 +88,12 @@ const Jumbotron = () =>{
   
     return (
       <div className="container mb-5">
-        <h2>Recommended For You</h2>
+        <h2>Latest Books For You</h2>
         <p className="text-muted mb-4">
-          New books that added to our shelves
+          Recommended new books in our shelves
         </p>
   
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
           {books.map((book) => (
             <BookCard key={book.id} book={book} />
           ))}
