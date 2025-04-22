@@ -1,12 +1,19 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import BookCard from "./util/BookCard"
+import MessageModal from './util/MessageModal';
 
 const Book = () =>{
 
   const { id } = useParams(); // get id from URL
   const navigate = useNavigate();
   const [book, setBook] = useState(null);
+
+  //modal
+  const [showModal, setShowModal] = useState(false);
+  
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
 
   const fetchBook = async () => {
     try {
@@ -16,11 +23,11 @@ const Book = () =>{
       if (result.status === 200) {
         setBook(result.data);
       } else {
-        navigate('/notfound'); // redirect if not 200
+        navigate('/notfound');
       }
     } catch (error) {
       console.error('Fetch error:', error);
-      navigate('/notfound'); // redirect on any error
+      navigate('/notfound');
     }
   };
 
@@ -51,9 +58,16 @@ const Book = () =>{
               className="img-fluid book-cover rounded"
             />
             <div className="mt-4">
-              <button className="btn btn-primary mt-2 w-100">
+              <button className="btn btn-primary mt-2 w-100" onClick={openModal}>
                 <i className="fas fa-book me-2"></i>Read Now
               </button>
+              <MessageModal show={showModal} handleClose={closeModal} title="Please login to read">
+                <p>Login to read this book</p>
+              </MessageModal>
+
+
+
+
               <button className="btn btn-outline-secondary mt-2 w-100">
                 <i className="fas fa-heart me-2"></i>Add to Favourite
               </button>

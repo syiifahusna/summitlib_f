@@ -45,7 +45,7 @@ const Category = () =>{
             setBooks((prev) => [...prev, ...result.data]);
             setOffset((prev) => prev + limit);
             if (result.data.length < limit) {
-            setHasMore(false);
+                setHasMore(false);
             }
         } else {
             setHasMore(false);
@@ -57,13 +57,10 @@ const Category = () =>{
             setLoading(false);
         }
     };
-      
-    useEffect(() => {
-        fetchBooks();
-    }, []);
 
     useEffect(() =>{
         fetchCategory();
+        fetchBooks();
     },[id, navigate])
 
 

@@ -1,48 +1,15 @@
 
 const Footer = () =>{
     return <div className="container">
-        <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-            <div className="col mb-3">
-            
-            <p className="text-body-secondary">Summit Lib© 2024</p>
-            </div>
-    
-            <div className="col mb-3">
-    
-            </div>
-    
-            <div className="col mb-3">
-            <h5>Section</h5>
-            <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-            </div>
-    
-            <div className="col mb-3">
-            <h5>Section</h5>
-            <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-            </div>
-    
-            <div className="col mb-3">
-            <h5>Section</h5>
-            <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-            </div>
+        <footer className="py-3 my-4">
+            <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+                <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">Home</a></li>
+                <li className="nav-item"><a href="/categories" className="nav-link px-2 text-body-secondary">Categories</a></li>
+                <li className="nav-item"><a href="/search" className="nav-link px-2 text-body-secondary">Search</a></li>
+                <li className="nav-item"><a href="/register" className="nav-link px-2 text-body-secondary">Register</a></li>
+                <li className="nav-item"><a href="/login" className="nav-link px-2 text-body-secondary">Login</a></li>
+                </ul>
+            <p className="text-center text-body-secondary">© 2025 Summit Lib</p>
         </footer>
     </div>
 

@@ -12,8 +12,8 @@ const Jumbotron = () =>{
   }
   
   const Ads = () =>{
-    const [adsTitle, setAdsTitle] = useState([]);
-    const [adsDesc, setAdsDesc] = useState([]);
+    const [adsTitle, setAdsTitle] = useState(null);
+    const [adsDesc, setAdsDesc] = useState(null);
 
      useEffect(() => {
         const fetchCategories = async () => {
